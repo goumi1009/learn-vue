@@ -2,9 +2,6 @@
   <h1>
     {{ msg }}
   </h1>
-  <div></div>
-  <div></div>
-  <img />
   <Hello />
 </template>
 
