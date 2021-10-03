@@ -13,6 +13,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'), // 결과가 만들어지는 파일 경로
+    publicPath: '/',
     clean: true, //번들링 결과에 필요없는 파일은 지워짐 내가 맘대로 막추가해놔도 결국 다시번들링하면 지워지게되어있지
   },
   module: {
@@ -36,4 +37,7 @@ module.exports = {
       patterns: [{ from: 'static' }],
     }),
   ],
+  devServer:{
+    historyApiFallback: true
+  }
 };
